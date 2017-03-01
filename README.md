@@ -21,6 +21,6 @@ file-1:code_for_ard_temp_data.ino
      
 For more details:Refer to
 
-1)
+1)checking Hardware connections and installation details:     https://github.com/Krishnachaitanya4167/Arduino_ESP8266_Test
 
-2)
+2)Detailed procedure:
