@@ -1,0 +1,42 @@
+1)To view the transmitted data from esp of arduino we need to use the mosquitto broker installed on server
+2)for detailed installion procedure of arduino and its setup refer to repository->Arduino-esp communication
+
+
+
+Installing mosquitto:
+1)mosquitto is a broker that is used to publish and subscribe the messages using mqtt protocol.
+2)It can installed in either windows or linux.but installing it in windows is a bit complicated process.
+3)So,to install it in linux enter the following commands as mentioned below
+-> Sudo su
+->apt-get install mosquitto
+->apt-get install mosquitto-clients
+4)if any error of broken packages persists,goto software centre of ubuntu and delete the repositories
+of mosquitto-ppa and try again the above commands.
+Using mosquitto:
+1)Mosquitto generally starts running as the system starts,to check whether it is running or not follow
+as shown below
+Open terminal->enter command: service status mosquitto
+2)now to check whether the message is being transmitted and received or not
+open two terminals
+
+ In terminal-1 enter the command: mosquitto_sub -t “topic”
+ In terminal-2enter the command :mosquitto_pub -t “topic” -m “message”
+ You will see the output “message” on terminal1 then you can confirmm that mosquitto is
+working.3)now open terminal 1 and use the command for subscription of the messages with the respective
+outtopic
+mosquitto_sub -t “output”
+Here my outtopic is :”output”
+4)now open terminal2 and use the command for publishing message with the intopic you specified at
+your device.
+Mosquitto_pub -t “input” -m “msg”
+.
+Here my intopic is:input and the message I want to transmit is “msg”
+5)Generally ,if we publish a message from mqtt broker any device can receive the message with same
+intopic and similarly in our subscription window we can recieve messages from any device that
+specifies the outtopic as we mentioned inour subscription window.
+NOTE:only if the server is the system where our broker runs I.e if the devices specify the server ip as
+the system ip that we are using to run our mosquitto I.e mqtt broker.
+6)we can redirect the output that we recieve in the subscription window into a text file by using
+command:
+mosquitto_sub -t “output”>log.txt
+Here the output we see on subscription window will be stored in log.txt file.
