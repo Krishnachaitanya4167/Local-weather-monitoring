@@ -1,5 +1,5 @@
 # Local-weather-monitoring
-/*This system works on a frame work which reads sensor data from arduino and transmits to server via Esp8266-wifi module.
+/*This system works on a frame work which reads sensor data from arduino and transmits to server via Esp8266-wifi module.*/
 
 file-1:code_for_ard_temp_data.ino
 
@@ -14,7 +14,9 @@ file-1:code_for_ard_temp_data.ino
  1)The procedure for implementing the project is mentioned in the readme file included in repository.
  2)The libraries that are used in this project are taken from
      a)pubsub-client library---https://github.com/knolleary/pubsubclient
-     b)DHT11-library-----------https://github.com/adafruit/DHT-sensor-library  //a few modifications are done as per our project requirements in dht11 library.
+     b)DHT11-library-----------https://github.com/adafruit/DHT-sensor-library  
+     
+     //a few modifications are done as per our project requirements in dht11 library.
      
      
 For more details:Refer to
