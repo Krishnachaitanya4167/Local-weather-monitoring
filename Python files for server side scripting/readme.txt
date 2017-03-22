@@ -1,6 +1,6 @@
 File1:cb2
 
-     In this file there are 3 functions readfile,timestamp,inser which are usedto  read lastline from a file,
+     In this file there are 3 functions readfile,timestamp,inser which are used to read lastline from a file,
      creating timestamp ,inserting the data into database respectively.
      
 File:main
