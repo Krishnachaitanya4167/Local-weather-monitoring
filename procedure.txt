@@ -1,4 +1,8 @@
+First install esp8266 board on arduino as  mentioned in install esp8266 board on arduino file
+install mosquitto,mysql as mentioned in install mosquitto.txt,install mysql.txt
 
 Install python:
 apt-get install python
 apt-get install python-mysqldb
+
+procedure:
