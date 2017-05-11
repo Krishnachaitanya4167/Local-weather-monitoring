@@ -1,0 +1,4 @@
+
+Install python:
+apt-get install python
+apt-get install python-mysqldb
