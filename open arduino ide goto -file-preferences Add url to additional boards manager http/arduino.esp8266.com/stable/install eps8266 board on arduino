@@ -1,8 +1,0 @@
-open arduino ide
-goto >file>preferences
-Add url to additional boards manager
-http://arduino.esp8266.com/stable/package_esp8266com_index.json
-Restart arduino ide
-Goto >tools>Board>Boards Manager
-Download esp8266 boards
-Restart arduino ide
